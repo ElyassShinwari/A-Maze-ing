@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A-Maze-ing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>A-Maze-ing</h1>
+  <p class="subtitle">Navigate the maze from the green entrance to the red exit</p>
+
+  <div class="controls">
+    <button id="btn-new">New Maze</button>
+    <button id="btn-solve">Show Solution</button>
+  </div>
+
+  <canvas id="maze-canvas"></canvas>
+
+  <div id="message"></div>
+
+  <div class="instructions">
+    Move with <strong>Arrow Keys</strong> or <strong>W A S D</strong>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item">
+      <span class="swatch swatch-player"></span> Player
+    </div>
+    <div class="legend-item">
+      <span class="swatch swatch-start"></span> Start
+    </div>
+    <div class="legend-item">
+      <span class="swatch swatch-end"></span> Exit
+    </div>
+    <div class="legend-item">
+      <span class="swatch swatch-path"></span> Solution
+    </div>
+  </div>
+
+  <script src="maze.js"></script>
+</body>
+</html>
